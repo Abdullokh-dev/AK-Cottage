@@ -7,23 +7,6 @@
             <router-link to="/cottage">
               <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
             </router-link>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <q-card-section>
               <q-btn
                 fab
