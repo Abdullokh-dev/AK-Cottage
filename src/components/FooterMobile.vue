@@ -1,5 +1,5 @@
 <template>
-  <div style="position: absolute; bottom: 0; width: 100%" class="lt-sm">
+  <div id="footer__mobile" class="lt-sm">
     <q-tabs
       v-model="tab"
       class="bg-grey-9 text-teal"
@@ -28,5 +28,12 @@ export default {
 </script>
 
 <style scoped>
+
+#footer__mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
 </style>
