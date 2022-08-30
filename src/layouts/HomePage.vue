@@ -1,13 +1,10 @@
 <template>
   <div>
-      <content-row />
+    <content-row/>
   </div>
 </template>
 <script>
-import HeaderRow from "components/HeaderRow";
 import ContentRow from "components/ContentRow";
-import FooterMobile from "components/FooterMobile";
-import FooterDesktop from "components/FooterDesktop";
 
 export default {
   name: "HomePage",

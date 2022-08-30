@@ -1,11 +1,11 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div class="q-pa-md row items-start q-gutter-md card__container">
     <div class="col">
       <div class="row">
-        <div v-for="n in 10" :key="n" class="col-12 col-sm-6 col-md-4 col-lg-3 q-pa-sm">
+        <div v-for="n in 10" :key="n" class="col-12 col-sm-6 col-md-4 col-lg-3 q-pa-md">
           <q-card class="my-card">
             <router-link to="/cottage">
-              <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg"/>
+              <q-img src="https://demo1-homeid.g5plus.net/wp-content/uploads/2020/10/single-property-12.jpg"/>
             </router-link>
 
             <q-card-section>
@@ -68,5 +68,16 @@ export default {
 }
 .icon__text {
   margin: 0 10px 0 3px;
+}
+@media only screen and (min-width: 1024px) {
+  .card__container {
+    width: 90%;
+    margin: 40px auto 0 auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card__container {
+    width: 80%;
+  }
 }
 </style>

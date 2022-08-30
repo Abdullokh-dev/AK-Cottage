@@ -2,7 +2,7 @@
   <q-card bordered class="bg-white my-card">
     <q-card-section>
       <div class="text-h6">
-        Video
+        Location Of Cottage
       </div>
     </q-card-section>
     <div class="my-card" style="margin-bottom: 70px;">
