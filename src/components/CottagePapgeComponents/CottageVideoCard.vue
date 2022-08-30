@@ -8,7 +8,7 @@
     <div class="my-card" style="margin-bottom: 70px;">
       <q-video
         :ratio="16/9"
-        src="https://www.youtube.com/embed/_6IO62oQfaU"
+        src="https://www.youtube.com/embed/6jHiaE9iKMQ"
       />
     </div>
   </q-card>

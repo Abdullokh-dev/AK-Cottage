@@ -7,7 +7,7 @@
     >
       <q-tab class="text-white q-px-none" icon="home" name="home" no-caps />
       <q-tab class="text-white q-px-none" icon="contacts" name="contacts" no-caps />
-      <q-tab class="text-white q-px-none" icon="add" name="add" no-caps/>
+      <q-tab class="text-white q-px-none" icon="add" name="add" no-caps />
       <q-tab class="text-white q-px-none" icon="chat" name="chat" no-caps />
       <q-tab class="text-white q-px-none" icon="settings" name="settings" no-caps />
     </q-tabs>
@@ -15,14 +15,13 @@
 </template>
 
 <script>
-import {ref} from "vue";
+import { ref } from "vue";
 
 export default {
   name: "FooterMobile",
-  components: {},
   setup() {
     return {
-      tab: ref("contacts"),
+      tab: ref("contacts")
     };
   }
 };

@@ -1,27 +1,24 @@
 <template>
   <div>
     <q-layout class="shadow-2" container style="height: 100vh" view="lHh lpr lFf">
-      <SignUpModalForm />
-      <header-row @onClickSignIn="onClickRegister"/>
+      <header-row />
 
-      <router-view/>
+      <router-view />
 
-      <FooterDesktop/>
+      <FooterDesktop />
     </q-layout>
-    <FooterMobile @onAddHome="onClickRegister"/>
+    <FooterMobile />
   </div>
 </template>
-<script setup>
 
+<script>
+import { defineComponent } from 'vue'
 import HeaderRow from "components/HeaderRow";
 import FooterDesktop from "components/FooterDesktop";
 import FooterMobile from "components/FooterMobile";
-import {changeVisibility} from "stores/ModalAuth";
-import SignUpModalForm from "components/SignUpModalForm";
 
-const visibleAuthModal = changeVisibility()
-
-function onClickRegister() {
-  visibleAuthModal.changeModalVisibility()
-}
+export default defineComponent({
+  name: 'App',
+  components: { FooterMobile, FooterDesktop, HeaderRow }
+})
 </script>
