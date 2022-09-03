@@ -53,8 +53,8 @@
            style="font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold;">
         Soat <span class="text-blue">{{ entryTime }}</span> dan <span class="text-blue">{{ exitTime }}</span> gacha
       </div>
-      <div class="justify-between row">
-        <q-input class="col-5" outlined v-model="entryTime" color="blue" mask="time" :rules="['time']">
+      <div class="row">
+        <q-input class="col-6 q-pr-sm" outlined v-model="entryTime" color="blue" mask="time" :rules="['time']">
           <template v-slot:append>
             <q-icon color="blue" name="access_time" class="cursor-pointer">
               <q-popup-proxy cover transition-show="scale" transition-hide="scale">
@@ -68,7 +68,7 @@
           </template>
         </q-input>
 
-        <q-input class="col-5" outlined v-model="exitTime" color="blue" mask="time" :rules="['time']">
+        <q-input class="col-6 q-pl-sm" outlined v-model="exitTime" color="blue" mask="time" :rules="['time']">
           <template v-slot:append>
             <q-icon color="blue" name="access_time" class="cursor-pointer">
               <q-popup-proxy cover transition-show="scale" transition-hide="scale">
@@ -83,8 +83,8 @@
         </q-input>
       </div>
 
-      <div class="row justify-between">
-        <div class="q-mt-lg col-12 col-md-5">
+      <div class="row">
+        <div class="q-mt-lg col-12 col-md-6 calendar-left">
           <q-uploader
             accept="image"
             url="http://localhost:4444/upload"
@@ -94,7 +94,7 @@
           />
         </div>
 
-        <div class="q-mt-lg col-12 col-md-5">
+        <div class="q-mt-lg col-12 col-md-6 calendar-right">
           <q-uploader
             accept="image"
             url="http://localhost:4444/upload"
@@ -142,9 +142,16 @@ const exitTime = ref('17:00')
 const id = ref(null)
 const phone = ref(null)
 
-
 </script>
 
 <style scoped>
+@media only screen and (min-width: 1024px) {
+  .calendar-left {
+    padding-right: 8px;
+  }
+  .calendar-right {
+    padding-left: 8px;
+  }
+}
 
 </style>

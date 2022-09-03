@@ -31,7 +31,7 @@
             <q-item-section>Security</q-item-section>
           </q-item>
 
-          <q-item clickable v-ripple active-class="text-orange">
+          <q-item clickable to="/support" v-ripple active-class="text-orange">
             <q-item-section avatar>
               <q-icon name="support_agent" color="blue" />
             </q-item-section>

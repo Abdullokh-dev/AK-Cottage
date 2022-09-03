@@ -30,8 +30,12 @@ const routes = [
     component: () => import('pages/FavoritesPage.vue')
   },
   {
-    path: '/setting',
+    path: '/settings',
     component: () => import('pages/SettingPage.vue')
+  },
+  {
+    path: '/support',
+    component: () => import('pages/SupportPage.vue')
   }
 ]
 
