@@ -1,15 +1,10 @@
+import HomePage from "pages/HomePage";
 
 const routes = [
   {
-    path: '/',
-    component: () => import('layouts/HomePage'),
-    children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+    path: "/",
+    component: HomePage
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')
@@ -17,6 +12,26 @@ const routes = [
   {
     path: '/cottage',
     component: () => import('pages/CottagePage.vue')
+  },
+  {
+    path: '/cottage/add',
+    component: () => import('pages/AddCottagePage.vue')
+  },
+  {
+    path: '/cottage/my',
+    component: () => import('pages/MyCottagesPage.vue')
+  },
+  {
+    path: '/cottage/change/:id',
+    component: () => import('pages/ChangeCottagePage.vue')
+  },
+  {
+    path: '/favorites',
+    component: () => import('pages/FavoritesPage.vue')
+  },
+  {
+    path: '/setting',
+    component: () => import('pages/SettingPage.vue')
   }
 ]
 

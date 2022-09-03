@@ -3,5 +3,14 @@
 
 export default {
   failed: 'Action failed',
-  success: 'Action was successful'
+  success: 'Action was successful',
+  cottage: {
+    weeksAgo: '2 weeks ago',
+    viewsCount: '500 views',
+    description: 'Description',
+    address: 'Address',
+    country: 'Country',
+    province: 'Province',
+    cityDistrict: 'City/District'
+  },
 }

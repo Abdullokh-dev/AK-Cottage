@@ -5,11 +5,11 @@
       class="bg-grey-9 text-teal"
       indicator-color="white"
     >
-      <q-tab class="text-white q-px-none" icon="home" name="home" no-caps />
-      <q-tab class="text-white q-px-none" icon="contacts" name="contacts" no-caps />
-      <q-tab class="text-white q-px-none" icon="add" name="add" no-caps/>
+      <q-tab @click="this.$router.push('/')" class="text-white q-px-none" icon="home" name="home" no-caps />
+      <q-tab @click="this.$router.push('/favorites')" class="text-white q-px-none" icon="favorite" name="favorite" no-caps />
+      <q-tab @click="this.$router.push('/cottage/add')" class="text-white q-px-none" icon="add" name="add" no-caps/>
       <q-tab class="text-white q-px-none" icon="chat" name="chat" no-caps />
-      <q-tab class="text-white q-px-none" icon="settings" name="settings" no-caps />
+      <q-tab @click="this.$router.push('/setting')" class="text-white q-px-none" icon="settings" name="settings" no-caps />
     </q-tabs>
   </div>
 </template>

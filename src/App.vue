@@ -1,15 +1,17 @@
 <template>
-  <div>
-    <q-layout class="shadow-2" container style="height: 100vh" view="lHh lpr lFf">
-      <SignUpModalForm />
+  <sign-up-modal-form />
+  <q-layout class="shadow-2 wrapper" view="lHh lpr lFf">
+    <div class="__header">
       <header-row @onClickSignIn="onClickRegister"/>
-
+    </div>
+    <div class="__main">
       <router-view/>
-
+    </div>
+    <div class="__footer">
       <FooterDesktop/>
-    </q-layout>
-    <FooterMobile @onAddHome="onClickRegister"/>
-  </div>
+      <FooterMobile @onAddHome="onClickRegister"/>
+    </div>
+  </q-layout>
 </template>
 <script setup>
 
@@ -25,3 +27,13 @@ function onClickRegister() {
   visibleAuthModal.changeModalVisibility()
 }
 </script>
+<style>
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.__main{
+  flex: 1 1 auto;
+}
+</style>

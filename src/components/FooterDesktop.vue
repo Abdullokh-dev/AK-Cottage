@@ -87,9 +87,10 @@ export default {
 @media only screen and (max-width: 1024px) {
   .col-md-6, .col-md-9, .col-md-3 {
     text-align: center !important;
+    margin-top: 10px;
   }
   .col-md-3 {
-    margin-bottom: 45px;
+    margin-bottom: 15px;
   }
   .list {
     margin-left: 2% !important;
@@ -101,7 +102,5 @@ export default {
     padding: 0 !important;
   }
 }
-
-
 
 </style>

@@ -5,9 +5,9 @@
       <div class="row items-center">
         <div class="col-10">
             <q-icon color="blue" name="mdi-clock" class="q-mr-xs" size="20px"/>
-            <span class="q-pr-md"> 2 weeks ago</span>
+            <span class="q-pr-md">{{$t('cottage.weeksAgo')}}</span>
             <q-icon color="blue" name="mdi-eye" class="q-mr-xs" size="20px"/>
-            <span>500 views</span>
+            <span>{{$t('cottage.viewsCount')}}</span>
         </div>
         <div class="col-2 text-right">
           <q-btn color="grey" icon="star" outline round size="10px"/>

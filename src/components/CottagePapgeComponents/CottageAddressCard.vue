@@ -2,7 +2,7 @@
   <q-card bordered class="bg-white my-card">
     <q-card-section>
       <div class="text-h6">
-        Address
+        {{$t('cottage.address')}}
       </div>
     </q-card-section>
 
@@ -10,19 +10,19 @@
       <li>
         <div class="row">
           <div class="col-12 col-sm-6 q-pa-xs">
-            <strong class="q-mr-md">Address:</strong>
+            <strong class="q-mr-md">{{$t('cottage.address')}}:</strong>
             <span>39-11 61st St, Motrid, Samarqand</span>
           </div>
           <div class="col-12 col-sm-6 q-pa-xs">
-            <strong class="q-mr-md">Country:</strong>
+            <strong class="q-mr-md">{{$t('cottage.country')}}:</strong>
             <span>O'zbekiston</span>
           </div>
           <div class="col-12 col-sm-6 q-pa-xs">
-            <strong class="q-mr-md">Province/State:</strong>
+            <strong class="q-mr-md">{{$t('cottage.province')}}:</strong>
             <span>Samarqand</span>
           </div>
           <div class="col-12 col-sm-6 q-pa-xs">
-            <strong class="q-mr-md">City/Town:</strong>
+            <strong class="q-mr-md">{{$t('cottage.cityDistrict')}}:</strong>
             <span>Samarqand shahar</span>
           </div>
           <div class="col-12 col-sm-6 q-pa-xs">
