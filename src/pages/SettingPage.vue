@@ -7,6 +7,14 @@
     <div class="col-12 col-sm-9 col-md-7 md-text-h6">
       <div class="q-pa-md q-gutter-md">
         <q-list separator>
+          <q-item clickable v-ripple to="/profile">
+            <q-item-section avatar>
+              <q-icon name="person" color="blue" />
+
+            </q-item-section>
+            <q-item-section>Profile</q-item-section>
+          </q-item>
+
           <q-item clickable v-ripple to="/cottage/my">
             <q-item-section avatar>
               <q-icon name="fa-solid fa-scroll" color="blue" />
@@ -24,11 +32,11 @@
             <q-item-section side class="text-blue">eng</q-item-section>
           </q-item>
 
-          <q-item clickable v-ripple active-class="text-orange">
+          <q-item clickable v-ripple active-class="text-orange" to="/change-password">
             <q-item-section avatar>
-              <q-icon name="security" color="blue" />
+              <q-icon name="key" color="blue" />
             </q-item-section>
-            <q-item-section>Security</q-item-section>
+            <q-item-section>Change Password</q-item-section>
           </q-item>
 
           <q-item clickable to="/support" v-ripple active-class="text-orange">
@@ -43,6 +51,15 @@
               <q-icon name="privacy_tip" color="blue" />
             </q-item-section>
             <q-item-section>Privacy policy</q-item-section>
+          </q-item>
+
+          <q-separator />
+
+          <q-item clickable v-ripple active-class="text-orange">
+            <q-item-section avatar>
+              <q-icon name="logout" color="blue" />
+            </q-item-section>
+            <q-item-section>Log out</q-item-section>
           </q-item>
 
           <q-separator />
@@ -92,7 +109,7 @@ const shape = ref('line')
 
 <style scoped>
 .container {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .q-item {

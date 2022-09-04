@@ -92,7 +92,7 @@ export default {
 
 <style scoped>
 .q-pa-md {
-  margin-top: 60px;
+  margin-top: 90px;
 }
 
 @media only screen and (min-width: 1024px) {

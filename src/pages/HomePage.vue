@@ -25,7 +25,6 @@ function addFavorite() {
   console.log('favorite ga qo\'shish kerak')
 }
 
-
 </script>
 
 <style scoped>

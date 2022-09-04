@@ -36,7 +36,15 @@ const routes = [
   {
     path: '/support',
     component: () => import('pages/SupportPage.vue')
-  }
+  },
+  {
+    path: '/change-password',
+    component: () => import('pages/ChangePasswordPage.vue')
+  },
+  {
+    path: '/profile',
+    component: () => import('pages/UserProfilePage')
+  },
 ]
 
 export default routes

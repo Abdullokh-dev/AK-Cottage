@@ -25,7 +25,7 @@
           />
         </div>
         <div class="col-12 col-sm-6 q-pa-sm float-right text-right">
-          <q-btn color="green" label="Send" />
+          <q-btn color="green" label="Send" @click="triggerPositive"/>
         </div>
       </div>
     </div>
@@ -33,12 +33,24 @@
 </template>
 
 <script setup>
+import { useQuasar } from 'quasar'
+
+const $q = useQuasar()
+
+function triggerPositive () {
+  $q.notify({
+    timeout: 1000,
+    actions: [{ icon: 'close', color: 'white' }],
+    type: 'positive',
+    message: 'Your message sent to support service'
+  })
+}
 
 </script>
 
 <style scoped>
 .container {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .q-btn {

@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 .main {
   flex: 1 1 auto;

@@ -5,27 +5,24 @@
       <div class="row">
         <div class="col-12 col-md-6 text-left q-pl-lg items-center">
             <q-icon class="cottage" name="cottage" size="35px" color="blue"/>
-            <div class="homeId inline-block">homeId</div>
+            <div class="homeId inline-block">cottageUz</div>
         </div>
         <div class="col-12 col-md-6 text-right q-pr-lg">
-          <q-icon class="icon" name="facebook" size="30px" color="blue"/>
-          <q-icon class="icon" name="facebook" size="30px" color="blue"/>
-          <q-icon class="icon" name="facebook" size="30px" color="blue"/>
+          <q-icon class="icon" name="fa-brands fa-telegram" size="30px" color="blue-6"/>
+          <q-icon class="icon" name="fa-brands fa-instagram" size="30px" color="purple"/>
           <q-icon class="icon" name="facebook" size="30px" color="blue"/>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-9 q-pl-lg text-left">
+        <div class="col-12 col-md-8 q-pl-lg text-left">
           <div class="inline-block">TERMS OF USE</div>
           <div class="inline-block list">PRIVACY POLICY</div>
-          <div class="inline-block list">CONTACT SUPPORT</div>
-          <div class="inline-block list">CAREERS</div>
-          <div class="inline-block list">FAQS</div>
+          <div class="inline-block list" @click="$router.push('/support')">CONTACT SUPPORT</div>
         </div>
 
-        <div class="col-12 col-md-3 reserved-txt text-right q-pr-lg">
-          © 2021 homeID. All Rights Reserved
+        <div class="col-12 col-md-4 reserved-txt text-right q-pr-lg">
+          © 2021 cottageUZ. All Rights Reserved
         </div>
       </div>
     </div>
@@ -68,11 +65,11 @@ export default {
   color: white;
 }
 
-.col-md-6, .col-md-9, .col-md-3 {
+.col-md-6, .col-md-8, .col-md-4 {
   margin-top: 45px;
 }
 
-.col-md-3 {
+.col-md-4 {
   padding-bottom: 45px;
 }
 
@@ -84,18 +81,22 @@ export default {
   margin-top: -18px;
 }
 
+.q-icon {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1024px) {
-  .col-md-6, .col-md-9, .col-md-3 {
+  .col-md-6, .col-md-8, .col-md-4 {
     text-align: center !important;
     margin-top: 10px;
   }
-  .col-md-3 {
+  .col-md-4 {
     margin-bottom: 15px;
   }
   .list {
     margin-left: 2% !important;
   }
-  .col-md-9 {
+  .col-md-8 {
     padding: 0 !important;
   }
   .q-pr-lg {

@@ -2,7 +2,7 @@
   <div id="footer__mobile" class="lt-sm">
     <q-tabs
       v-model="tab"
-      class="bg-grey-9 text-teal"
+      class="bg-grey-9 text-teal q-py-sm"
       indicator-color="white"
     >
       <q-tab @click="this.$router.push('/')" class="text-white q-px-none" icon="home" name="home" no-caps />
