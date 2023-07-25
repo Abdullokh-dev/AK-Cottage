@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-12 q-px-lg text-center q-mb-lg">
           <q-avatar size="100px">
-            <img class="cursor-pointer" src="https://cdn.quasar.dev/img/avatar.png">
+            <img class="cursor-pointer" src="https://avatars.githubusercontent.com/u/101015366?v=4">
           </q-avatar>
         </div>
         <div class="col-12 col-sm-6 q-pa-sm">

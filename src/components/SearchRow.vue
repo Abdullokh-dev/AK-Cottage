@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-grey-8 row justify-center" style="margin-top: 59px;">
+  <div class="bg-grey-8 row justify-center" style="margin-top: 82px;">
     <div class="col-11 col-sm-11 col-md-10 col-lg-9">
       <div class="row">
-        <div class="col-12 q-pt-sm q-px-sm q-pb-lg">
+        <div class="col-12 q-pt-sm q-px-sm q-pb-lg" style="margin-top: 20px">
           <q-input
             v-model="search"
             bg-color="grey-3"

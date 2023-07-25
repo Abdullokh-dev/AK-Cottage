@@ -20,8 +20,8 @@
     <q-card-section>
       <div class="row">
         <div class="col-10">
-          <div class="text-h6">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
-          <div class="text-subtitle2">by John Doe</div>
+          <div class="text-h6">City Flat</div>
+          <div class="text-subtitle2">By Abdullokh Khamzaev</div>
         </div>
         <div class="col-2 text-center">
           <div class="text-h6"> 1200$</div>
@@ -33,11 +33,8 @@
 
     <q-card-section>
       <p class="text-h6">Description</p>
-      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur cumque dolores earum ipsam nostrum
-        pariatur tenetur vero vitae voluptas. Aliquid consequatur, deserunt dolore excepturi facere fuga itaque natus
-        possimus repellat soluta. Explicabo saepe unde ut voluptatibus! Incidunt, quod, sint. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Consequatur inventore quibusdam ratione sit voluptate. Aspernatur cumque
-        debitis excepturi ipsam similique.
+      <div>
+        Beautiful two-bedroom city flat five minutes' walk from the cathedral. Fully equipped kitchen, living room with a large sofa and chairs, big TV and balcony. The balcony has space for four people to sit and gets the sun in the mornings, and the flat is light and warm. It has Wi-Fi and fast internet. The upstairs bedroom sleeps four people, with two double beds; the downstairs bedroom sleeps two in single beds. The flat is perfect for families and is near shops, bars and restaurants.
       </div>
     </q-card-section>
   </q-card>
